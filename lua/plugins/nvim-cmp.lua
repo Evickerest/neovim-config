@@ -33,6 +33,7 @@ return {
 				['<CR>'] = cmp.mapping.confirm({select = true})
 			}),
 			sources = cmp.config.sources({
+				{name = "lazydev"},
 				{name = "nvim_lsp"},
 				{name = "luasbip"},
 				{name = "buffer"},
