@@ -1,4 +1,5 @@
 -- Load plugins
+--
 require("config.lazy")
 require("lualine").setup()
 require("luasnip").config.set_config({
@@ -54,6 +55,7 @@ vim.cmd("filetype plugin indent on")
 -- Highlighting
 local hi = vim.api
 
+hi.nvim_set_hl(0, "Normal", {bg = "None"})
 hi.nvim_set_hl(0, "LineNr", {fg = "White"})
 hi.nvim_set_hl(0, "LineNrAbove", {fg = "White"})
 hi.nvim_set_hl(0, "LineNrBelow", {fg = "White"})

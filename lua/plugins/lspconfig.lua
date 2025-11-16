@@ -103,6 +103,21 @@ return {
 			on_attach = on_attach
 		})
 
+		lspconfig["angularls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach
+		})
+
+		lspconfig["ts_ls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach
+		})
+
+		lspconfig["omnisharp"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach
+		})
+
 		lspconfig["emmet_language_server"].setup({
 			filetypes = { "css", "html", "javascript" },
 			capabilities = capabilities,
